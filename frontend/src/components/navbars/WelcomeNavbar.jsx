@@ -16,6 +16,10 @@ const WelcomeNavbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+  const user = JSON.parse(localStorage.getItem("user"));
+
+  const isLoggedIn = Object.keys(user).length > 0;
+
   return (
     <>
       {/* work on fixed navbar */}
@@ -28,20 +32,46 @@ const WelcomeNavbar = () => {
             </span>
           </Link>
           <div class="flex md:order-2 gap-5 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button
-              onClick={() => navigate(LOGIN_PAGE)}
-              type="button"
-              class="text-blue-700 font-bold hover:bg-blue-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            >
-              Login
-            </button>
-            <button
-              onClick={() => navigate(REGISTER_PAGE)}
-              type="button"
-              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            >
-              Get started
-            </button>
+            {/*  */}
+            {!isLoggedIn && (
+              <button
+                onClick={() => navigate(LOGIN_PAGE)}
+                type="button"
+                class="text-blue-700 font-bold hover:bg-blue-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Login
+              </button>
+            )}
+            {!isLoggedIn && (
+              <button
+                onClick={() => navigate(REGISTER_PAGE)}
+                type="button"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Get started
+              </button>
+            )}
+            {/*  */}
+
+            {/* profile Icon */}
+            {isLoggedIn && (
+              <Link to={"/profile"}>
+                <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+                  <svg
+                    class="absolute w-12 h-12 text-gray-400 -left-1"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+              </Link>
+            )}
 
             <button
               data-collapse-toggle="navbar-sticky"

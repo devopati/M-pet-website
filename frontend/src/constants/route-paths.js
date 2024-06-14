@@ -3,6 +3,8 @@ export const WELCOME_PAGE = "/";
 export const REGISTER_PAGE = "/register";
 export const LOGIN_PAGE = "/login";
 
+export const PROFILE_PAGE = "/profile";
+
 export const ANIMALS_PAGE = "/animals";
 export const REQUESTS_PAGE = "/requests";
 export const ABOUT_PAGE = "/about";
