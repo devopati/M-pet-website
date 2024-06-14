@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DropDown from "./DropDown";
 import AnimalCard from "./AnimalCard";
+import { pets } from "../../../data/pets-data";
 
 const DogsContainer = () => {
   const [currPet, setCurrPet] = useState("cat");
@@ -36,12 +37,17 @@ const DogsContainer = () => {
       </div>
 
       <div className="flex flex-wrap justify-center gap-8">
-        <AnimalCard />
-        <AnimalCard />
-        <AnimalCard />
-        <AnimalCard />
-        <AnimalCard />
-        <AnimalCard />
+        {pets.map((pet) => {
+          return (
+            <div key={pet.id}>
+              <AnimalCard
+                title={pet.title}
+                image={pet.image}
+                description={pet.description}
+              />
+            </div>
+          );
+        })}
       </div>
     </div>
   );

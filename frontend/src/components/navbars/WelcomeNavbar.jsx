@@ -18,7 +18,7 @@ const WelcomeNavbar = () => {
 
   const user = JSON.parse(localStorage.getItem("user"));
 
-  const isLoggedIn = Object.keys(user).length > 0;
+  const isLoggedIn = user !== null ? Object.keys(user)?.length > 0 : false;
 
   return (
     <>

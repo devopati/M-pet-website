@@ -4,7 +4,6 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import connectDb from "./Db/connectDb.js";
 import UserRoute from "./routes/UserRoutes.js";
-import DeviceRoute from "./routes/DeviceRoutes.js";
 
 const app = express();
 dotenv.config();
@@ -21,7 +20,6 @@ app.get("/", (req, res) => {
 
 // routes
 app.use("/api/user", UserRoute);
-app.use("/api/device", DeviceRoute);
 
 const startServer = async () => {
   try {
