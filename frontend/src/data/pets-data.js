@@ -13,7 +13,7 @@ export const pets = [
     description:
       "Meet Damien - this strikingly handsome guy is the ultimate bundle of joy! He truly spreads smiles and positive vibes wherever he goes. With his infectious happiness and boundless energy, Damien is ready to embark on adventures with his forever family. If you're looking for a furry companion who will keep your spirits high and your heart full, Damien is the perfect match for you!",
     image:
-      "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/71712649/1/?bust=1718203469&width=1080",
+      "https://images.unsplash.com/photo-1588425861982-ac184696429e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGRvZyUyMHBpY3N8ZW58MHx8MHx8fDA%3D",
   },
   {
     id: "3",
@@ -21,6 +21,6 @@ export const pets = [
     description:
       "At Misfit Manor it's important to us to meet the dog's where they are at. To never put them in situations they are not able to deal with emotionally or have not been properly 'trained' to handle. Each dog's journey is their own as we allow them to lead the way forward.",
     image:
-      "https://dbw3zep4prcju.cloudfront.net/animal/ee73c3b7-4871-4c9a-ad50-1db826e4dea3/image/38138c80-17cb-41e0-af71-384a2e26c98b.jpg?versionId=6bbR.56l3CAfuH3sTrggpoKlUtzZpV0H&bust=1712608718&width=1080",
+      "https://images.unsplash.com/photo-1667190679378-78f74ba11f6e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fGRvZyUyMHBpY3N8ZW58MHx8MHx8fDA%3D",
   },
 ];

@@ -9,3 +9,4 @@ export const ANIMALS_PAGE = "/animals";
 export const REQUESTS_PAGE = "/requests";
 export const ABOUT_PAGE = "/about";
 export const CONTACT_PAGE = "/contact";
+export const ADOPT_PET_FORM = "/adopt-pet";

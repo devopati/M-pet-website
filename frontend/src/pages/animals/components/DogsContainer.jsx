@@ -27,13 +27,13 @@ const DogsContainer = () => {
         </h1>
       </div>
       <div className="flex gap-24 justify-center ">
-        <DropDown />
+        {/* <DropDown />
         <DropDown title="sex" data={["Male", "Female"]} />
         <DropDown title="age" data={[1, 2, 3, 4, 5, 6]} />
         <DropDown
           title="color"
           data={["White", "Grey", "Black", "Multi-colored"]}
-        />
+        /> */}
       </div>
 
       <div className="flex flex-wrap justify-center gap-8">

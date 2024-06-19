@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import {
   ABOUT_PAGE,
+  ADOPT_PET_FORM,
   ANIMALS_PAGE,
   CONTACT_PAGE,
   LOGIN_PAGE,
@@ -22,6 +23,7 @@ import {
 import WelcomeNavbar from "../components/navbars/WelcomeNavbar";
 import Footer from "../components/containers/Footer";
 import Profile from "../pages/profile/Profile";
+import AdoptPetForm from "../pages/adopt/AdoptPetForm";
 
 const AppRoutes = () => {
   const location = useLocation();
@@ -37,6 +39,7 @@ const AppRoutes = () => {
         <Route path={PROFILE_PAGE} element={<Profile />} />
 
         <Route path={ANIMALS_PAGE} element={<AnimalsPage />} />
+        <Route path={ADOPT_PET_FORM} element={<AdoptPetForm />} />
         <Route path={REQUESTS_PAGE} element={<MyRequestsPage />} />
         <Route path={ABOUT_PAGE} element={<AboutPage />} />
         <Route path={CONTACT_PAGE} element={<ContactsPage />} />
