@@ -12,11 +12,11 @@ const ContactsPage = () => {
             Got a technical issue? Want to send feedback about a beta feature?
             Need details about our Services? Let us know.
           </p>
-          <form action="#" class="space-y-8">
-            <div>
+          <form action="#" class="space-y-8 border rounded border-gray-400 ml-[40px] pl-[30px] pt-[30px] pb-[30px] pr-[30px]">
+            <div >
               <label
                 for="email"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                class="block mb-1 text-md font-medium text-gray-900 dark:text-gray-300"
               >
                 Your email
               </label>
@@ -31,7 +31,7 @@ const ContactsPage = () => {
             <div>
               <label
                 for="subject"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                class="block mb-1 text-md font-medium text-gray-900 dark:text-gray-300"
               >
                 Subject
               </label>
@@ -46,7 +46,7 @@ const ContactsPage = () => {
             <div class="sm:col-span-2">
               <label
                 for="message"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+                class="block mb-1 text-md font-medium text-gray-900 dark:text-gray-400"
               >
                 Your message
               </label>
