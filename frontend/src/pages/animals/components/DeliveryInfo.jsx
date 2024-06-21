@@ -1,6 +1,9 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const DeliveryInfo = () => {
+  const { curr_pet } = useSelector((state) => state.auth);
+  console.log(curr_pet);
   return (
     <form className="flex flex-row gap-8 ml-[160px]">
       <div className="pr-[40px]">
@@ -67,7 +70,7 @@ const DeliveryInfo = () => {
           <div className=" mb-7 w-[300px] mt-[55px] p-5 border border-gray-400">
             <div className="mb-3">
               <p className="font-medium">Price tag</p>
-              <p>Ksh:</p>
+              <p>Ksh:{curr_pet.price}</p>
             </div>
             <hr />
             <div className="mb-3">
@@ -77,12 +80,13 @@ const DeliveryInfo = () => {
             <hr />
             <div className="font-semibold">
               <b className=" mr-3">Total-</b>
-              <b>Ksh:</b>
+              <b>Ksh: {curr_pet.price}</b>
             </div>
           </div>
-          <button className=" ml-9 hover:bg-slate-600   border rounded-md font-semibold bg-blue-600 text-white text-center text-sm h-[40px] w-[200px]"><a href="/pay">PROCEED TO PAYMENT</a></button>
+          <button className=" ml-9 hover:bg-slate-600   border rounded-md font-semibold bg-blue-600 text-white text-center text-sm h-[40px] w-[200px]">
+            <a href="/pay">PROCEED TO PAYMENT</a>
+          </button>
         </div>
-       
       </div>
     </form>
   );

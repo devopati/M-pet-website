@@ -24,6 +24,8 @@ import WelcomeNavbar from "../components/navbars/WelcomeNavbar";
 import Footer from "../components/containers/Footer";
 import Profile from "../pages/profile/Profile";
 import AdoptPetForm from "../pages/adopt/AdoptPetForm";
+import DeliveryInfo from "../pages/animals/components/DeliveryInfo";
+import PayWith from "../pages/animals/components/PayWith";
 
 const AppRoutes = () => {
   const location = useLocation();
@@ -43,6 +45,9 @@ const AppRoutes = () => {
         <Route path={REQUESTS_PAGE} element={<MyRequestsPage />} />
         <Route path={ABOUT_PAGE} element={<AboutPage />} />
         <Route path={CONTACT_PAGE} element={<ContactsPage />} />
+
+        <Route path="/order" element={<DeliveryInfo />} />
+        <Route path="/pay" element={<PayWith />} />
       </Routes>
 
       <Footer />
