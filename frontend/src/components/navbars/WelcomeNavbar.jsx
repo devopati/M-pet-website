@@ -11,14 +11,16 @@ import {
 } from "../../constants/route-paths";
 import { CustomImages } from "../../assets/images";
 import NavItem from "./NavItem";
+import { useDispatch, useSelector } from "react-redux";
+import { logoutUser } from "../../redux/slices/AuthSlice";
+import { toast } from "react-toastify";
 
 const WelcomeNavbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const dispatch = useDispatch();
 
-  const user = JSON.parse(localStorage.getItem("user"));
-
-  const isLoggedIn = user !== null ? Object.keys(user)?.length > 0 : false;
+  const { isLoggedIn } = useSelector((state) => state.auth);
 
   return (
     <>
@@ -55,22 +57,16 @@ const WelcomeNavbar = () => {
 
             {/* profile Icon */}
             {isLoggedIn && (
-              <Link to={"/profile"}>
-                <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-                  <svg
-                    class="absolute w-12 h-12 text-gray-400 -left-1"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                </div>
-              </Link>
+              <button
+                onClick={() => {
+                  dispatch(logoutUser());
+                  toast.success("You have been logged out");
+                }}
+                type="button"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Logout
+              </button>
             )}
 
             <button

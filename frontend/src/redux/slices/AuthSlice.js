@@ -73,6 +73,9 @@ const AuthSlice = createSlice({
     SET_SUCC_MSG(state, action) {
       state.successMsg = action.payload;
     },
+    logoutUser: (state, action) => {
+      state.isLoggedIn = false;
+    },
     setCurrPet: (state, action) => {
       state.curr_pet = action.payload;
     },
@@ -124,6 +127,7 @@ const AuthSlice = createSlice({
   },
 });
 
-export const { SET_ERR_MSG, SET_SUCC_MSG, setCurrPet } = AuthSlice.actions;
+export const { SET_ERR_MSG, SET_SUCC_MSG, setCurrPet, logoutUser } =
+  AuthSlice.actions;
 
 export default AuthSlice.reducer;
