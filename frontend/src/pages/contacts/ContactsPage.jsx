@@ -20,7 +20,7 @@ const ContactsPage = () => {
             setLoading(false)
             ('SUCCESS!');
         },
-        (error) => {
+        (error) =>{
             setLoading(false)
             ('FAILED....', error.text);
         },

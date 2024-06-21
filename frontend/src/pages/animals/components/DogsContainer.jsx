@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import DropDown from "./DropDown";
+import { useDispatch } from "react-redux";
 import AnimalCard from "./AnimalCard";
 import { pets } from "../../../data/pets-data";
 
 const DogsContainer = () => {
+  const dispatch = useDispatch();
   const [currPet, setCurrPet] = useState("cat");
   return (
     <div className="pt-6 flex flex-col gap-10 mx-10">
@@ -26,15 +27,7 @@ const DogsContainer = () => {
           Dogs
         </h1>
       </div>
-      <div className="flex gap-24 justify-center ">
-        {/* <DropDown />
-        <DropDown title="sex" data={["Male", "Female"]} />
-        <DropDown title="age" data={[1, 2, 3, 4, 5, 6]} />
-        <DropDown
-          title="color"
-          data={["White", "Grey", "Black", "Multi-colored"]}
-        /> */}
-      </div>
+      <div className="flex gap-24 justify-center "></div>
 
       <div className="flex flex-wrap justify-center gap-8">
         {pets.map((pet) => {
@@ -44,6 +37,7 @@ const DogsContainer = () => {
                 title={pet.title}
                 image={pet.image}
                 description={pet.description}
+                price={pet.price}
               />
             </div>
           );

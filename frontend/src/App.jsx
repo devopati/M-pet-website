@@ -10,21 +10,15 @@ import PayWith from "./pages/animals/components/PayWith";
 
 function App() {
   return (
-   <div>
-     <Provider store={store}>
-     
-     <ToastContainer />
-     <AppRoutes />
- </Provider>
- <Routes>
-  <Route>
-  <Route path='/order' element={<DeliveryInfo/>} />
-  <Route path='/pay' element={<PayWith/>} />
-
-  </Route>
-   
- </Routes>
-   </div>
+    <div>
+      <Provider store={store}>
+        <ToastContainer />
+        <AppRoutes />
+      </Provider>
+      {/* <Routes>
+        <Route></Route>
+      </Routes> */}
+    </div>
   );
 }
 
