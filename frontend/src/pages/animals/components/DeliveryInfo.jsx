@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { toast } from "react-toastify";
 
 const DeliveryInfo = () => {
   const { curr_pet } = useSelector((state) => state.auth);
@@ -83,8 +84,11 @@ const DeliveryInfo = () => {
               <b>Ksh: {curr_pet.price}</b>
             </div>
           </div>
-          <button className=" ml-9 hover:bg-slate-600   border rounded-md font-semibold bg-blue-600 text-white text-center text-sm h-[40px] w-[200px]">
-            <a href="/pay">PROCEED TO PAYMENT</a>
+          <button
+            onClick={() => toast.error("An error occurred making payments")}
+            className=" ml-9 hover:bg-slate-600   border rounded-md font-semibold bg-blue-600 text-white text-center text-sm h-[40px] w-[200px]"
+          >
+            PROCEED TO PAYMENT
           </button>
         </div>
       </div>
