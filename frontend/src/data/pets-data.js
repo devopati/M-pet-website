@@ -32,7 +32,7 @@ export const pets = [
     description:
       "Meet Buddy, the lovable goofball who's always up for a game of fetch or a long walk in the park. Buddy is a loyal companion who will brighten your days with his playful antics and unwavering affection. With his expressive eyes and wagging tail, Buddy is sure to steal your heart!",
     image:
-      "https://images.unsplash.com/photo-1544409217-55e898178f19?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGRvZyUyMHBpY3N8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1619999882198-6e88694f1e3a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODZ8fGNhdCUyMHBpY3N8ZW58MHx8MHx8fDA%3D",
     price: 289,
   },
   {
@@ -41,7 +41,7 @@ export const pets = [
     description:
       "Introducing Maximus, the gentle giant with a heart of gold. Despite his imposing size, Maximus is a big softie who loves cuddles and belly rubs. He's great with kids and enjoys lounging around the house as much as he enjoys outdoor adventures. If you're seeking a loyal companion who's both majestic and mild-mannered, look no further than Maximus!",
     image:
-      "https://images.unsplash.com/photo-1560807707-1d00f3e7de6a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRvZyUyMHBpY3N8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1619999882198-6e88694f1e3a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODZ8fGNhdCUyMHBpY3N8ZW58MHx8MHx8fDA%3D",
     price: 654,
   },
   {
@@ -50,7 +50,7 @@ export const pets = [
     description:
       "Meet Lucy, the playful pup with boundless energy and a heart of gold. Lucy is always up for an adventure, whether it's chasing balls at the park or snuggling up on the couch. She's great with other dogs and adores meeting new people. If you're looking for a spirited companion who will bring joy to your home, Lucy is the perfect match!",
     image:
-      "https://images.unsplash.com/photo-1537974927187-c00a77c0bb38?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGRvZyUyMHBpY3N8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1510704652036-67838c2cfab6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNhdCUyMHBpY3N8ZW58MHx8MHx8fDA%3D",
     price: 346,
   },
   {
@@ -59,7 +59,7 @@ export const pets = [
     description:
       "Rocky is a true adventurer at heart, always eager to explore new trails and sniff out exciting scents. This spirited boy loves outdoor activities like hiking and running, but he's also a cuddle enthusiast who enjoys relaxing at home. Rocky is looking for an active family who shares his passion for exploration and is ready to make lifelong memories together.",
     image:
-      "https://images.unsplash.com/photo-1605664120245-67c5c798ee1d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGRvZyUyMHBpY3N8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1681244304508-b8fa9e3daae3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0JTIwcGljc3xlbnwwfHwwfHx8MA%3D%3D",
     price: 200,
   },
   {
@@ -68,7 +68,7 @@ export const pets = [
     description:
       "Meet Sasha, the elegant and affectionate feline looking for a loving home. Sasha enjoys lounging in sunny spots and curling up on cozy blankets. She's a gentle soul who adores being pampered with chin scratches and treats. If you're seeking a sophisticated companion who will bring grace and warmth to your home, Sasha is the purrfect choice!",
     image:
-      "https://images.unsplash.com/photo-1578745651150-bf28dc8a97db?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGRvZyUyMHBpY3N8ZW58MHx8MHx8fDA%3D",
+      "https://plus.unsplash.com/premium_photo-1677545182067-26ac518ef64f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODV8fGNhdCUyMHBpY3N8ZW58MHx8MHx8fDA%3D",
     price: 456,
   },
 ];

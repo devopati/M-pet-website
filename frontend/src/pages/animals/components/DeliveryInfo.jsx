@@ -71,17 +71,17 @@ const DeliveryInfo = () => {
           <div className=" mb-7 w-[300px] mt-[55px] p-5 border border-gray-400">
             <div className="mb-3">
               <p className="font-medium">Price tag</p>
-              <p>Ksh:{curr_pet.price}</p>
+              <p>Ksh:{200.0}</p>
             </div>
             <hr />
             <div className="mb-3">
               <p className=" text-lg font-medium">Delivery fee</p>
-              <p className=" text-md font-light">Ksh</p>
+              <p className=" text-md font-light">Ksh: 0.00</p>
             </div>
             <hr />
             <div className="font-semibold">
               <b className=" mr-3">Total-</b>
-              <b>Ksh: {curr_pet.price}</b>
+              <b>Ksh: {200.0}</b>
             </div>
           </div>
           <button
