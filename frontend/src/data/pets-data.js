@@ -71,4 +71,44 @@ export const pets = [
       "https://plus.unsplash.com/premium_photo-1677545182067-26ac518ef64f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODV8fGNhdCUyMHBpY3N8ZW58MHx8MHx8fDA%3D",
     price: 456,
   },
+  {
+    id: "4",
+    title: "Walt",
+    description:
+      "At Misfit Manor it's important to us to meet the dog's where they are at. To never put them in situations they are not able to deal with emotionally or have not been properly 'trained' to handle. Each dog's journey is their own as we allow them to lead the way forward.",
+    image:
+      "https://images.unsplash.com/photo-1523480717984-24cba35ae1ef?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    id: "5",
+    title: "Prexy",
+    description:
+      "At Misfit Manor it's important to us to meet the dog's where they are at. To never put them in situations they are not able to deal with emotionally or have not been properly 'trained' to handle. Each dog's journey is their own as we allow them to lead the way forward.",
+    image:
+      "https://images.unsplash.com/photo-1550159930-40066082a4fc?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    id: "6",
+    title: "Pinky",
+    description:
+      "At Misfit Manor it's important to us to meet the dog's where they are at. To never put them in situations they are not able to deal with emotionally or have not been properly 'trained' to handle. Each dog's journey is their own as we allow them to lead the way forward.",
+    image:
+      "https://images.unsplash.com/photo-1616260737564-2acd772baa2b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    id: "7",
+    title: "Maya",
+    description:
+      "At Misfit Manor it's important to us to meet the dog's where they are at. To never put them in situations they are not able to deal with emotionally or have not been properly 'trained' to handle. Each dog's journey is their own as we allow them to lead the way forward.",
+    image:
+      "https://images.unsplash.com/photo-1598589290625-9b04630ec5d1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    id: "8",
+    title: "Tito",
+    description:
+      "At Misfit Manor it's important to us to meet the dog's where they are at. To never put them in situations they are not able to deal with emotionally or have not been properly 'trained' to handle. Each dog's journey is their own as we allow them to lead the way forward.",
+    image:
+      "https://images.unsplash.com/uploads/141319662617846f3b4c9/1677b57d?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
 ];
