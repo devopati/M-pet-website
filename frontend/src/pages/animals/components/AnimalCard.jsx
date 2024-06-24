@@ -2,10 +2,10 @@ import React from "react";
 import { CustomImages } from "../../../assets/images";
 import { useNavigate } from "react-router-dom";
 
-const AnimalCard = ({ image, title, description, link, price }) => {
+const AnimalCard = ({ image, title, description, link, price, onclick }) => {
   const navigate = useNavigate();
   return (
-    <div>
+    <div onClick={onclick}>
       <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
           <img class="rounded-t-lg" src={image} alt="" />

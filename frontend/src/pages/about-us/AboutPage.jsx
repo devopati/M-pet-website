@@ -22,7 +22,7 @@ const AboutPage = () => {
         <h1 className="text-xl pb-4 font-semibold">Our Story</h1>
         <p className="text-gray-600 sp">
           M-pet began in 2023 with a simple mission: to help animals in need.
-          Founded by [Founder's Name], who has always had a passion for animal
+          Founded by m-petters, who has always had a passion for animal
           welfare,We saw a growing number of abandoned pets and knew something
           had to be done. Since then, we've grown into a passionate team
           dedicated to making a difference in the lives of animals and the
