@@ -2,8 +2,6 @@ import axios from "axios";
 import { StatusCodes } from "http-status-codes";
 
 const mpesaStkPush = async (req, res, next) => {
-  console.log(req.body);
-  console.log(req.token);
   try {
     const token = req.token;
     const { phone, amount } = req.body;
@@ -34,9 +32,9 @@ const mpesaStkPush = async (req, res, next) => {
         PartyA: formatNumberForMpesa(phone),
         PartyB: 174379,
         PhoneNumber: formatNumberForMpesa(phone),
-        CallBackURL: "https://www.CallBackURL.com",
-        AccountReference: `${formatNumberForMpesa(phone)}`,
-        TransactionDesc: "Payment for pet adoption",
+        CallBackURL: "https://mydomain.com/pat",
+        AccountReference: "CompanyXLTD",
+        TransactionDesc: "Payment of X",
       },
       {
         headers: {
@@ -47,9 +45,9 @@ const mpesaStkPush = async (req, res, next) => {
 
     res.status(StatusCodes.OK).json({
       msg: "Payment initiated, enter your m-pesa pin to complete transaction",
-      response,
     });
   } catch (error) {
+    console.log(error);
     next(error);
   }
 };
