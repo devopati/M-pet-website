@@ -7,6 +7,7 @@ import {
   LOGIN_PAGE,
   REGISTER_PAGE,
   REQUESTS_PAGE,
+  VET_PAGE,
   WELCOME_PAGE,
 } from "../../constants/route-paths";
 import { CustomImages } from "../../assets/images";
@@ -109,6 +110,12 @@ const WelcomeNavbar = () => {
                 name="Adopt a pet"
                 active={location.pathname.includes(ANIMALS_PAGE)}
                 to={ANIMALS_PAGE}
+              />
+
+              <NavItem
+                name="Vet Services"
+                active={location.pathname.includes(VET_PAGE)}
+                to={VET_PAGE}
               />
 
               <NavItem
