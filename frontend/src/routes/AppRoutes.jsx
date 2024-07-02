@@ -9,6 +9,7 @@ import {
   PROFILE_PAGE,
   REGISTER_PAGE,
   REQUESTS_PAGE,
+  REVIEW_PAGE,
   VET_PAGE,
   WELCOME_PAGE,
 } from "../constants/route-paths";
@@ -28,6 +29,7 @@ import AdoptPetForm from "../pages/adopt/AdoptPetForm";
 import DeliveryInfo from "../pages/animals/components/DeliveryInfo";
 import PayWith from "../pages/animals/components/PayWith";
 import VetPage from "../pages/vet/VetPage";
+import ReviewPage from "../pages/review/ReviewPage";
 
 const AppRoutes = () => {
   const location = useLocation();
@@ -46,6 +48,7 @@ const AppRoutes = () => {
         <Route path={ADOPT_PET_FORM} element={<AdoptPetForm />} />
         <Route path={VET_PAGE} element={<VetPage />} />
         <Route path={REQUESTS_PAGE} element={<MyRequestsPage />} />
+        <Route path={REVIEW_PAGE} element={<ReviewPage />} />
         <Route path={ABOUT_PAGE} element={<AboutPage />} />
         <Route path={CONTACT_PAGE} element={<ContactsPage />} />
 

@@ -7,6 +7,7 @@ import {
   LOGIN_PAGE,
   REGISTER_PAGE,
   REQUESTS_PAGE,
+  REVIEW_PAGE,
   VET_PAGE,
   WELCOME_PAGE,
 } from "../../constants/route-paths";
@@ -122,6 +123,12 @@ const WelcomeNavbar = () => {
                 name="My Requests"
                 active={location.pathname.includes(REQUESTS_PAGE)}
                 to={REQUESTS_PAGE}
+              />
+
+              <NavItem
+                name="Reviews"
+                active={location.pathname.includes(REVIEW_PAGE)}
+                to={REVIEW_PAGE}
               />
 
               <NavItem

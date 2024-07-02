@@ -2,7 +2,17 @@ import React from "react";
 import { CustomImages } from "../../../assets/images";
 import { useNavigate } from "react-router-dom";
 
-const AnimalCard = ({ image, title, description, link, price, onclick }) => {
+const AnimalCard = ({
+  image,
+  title,
+  description,
+  link,
+  price,
+  onclick,
+  breed,
+  age,
+  sex,
+}) => {
   const navigate = useNavigate();
   return (
     <div onClick={onclick}>
@@ -16,6 +26,34 @@ const AnimalCard = ({ image, title, description, link, price, onclick }) => {
               {title}
             </h5>
           </a>
+
+          <div className="flex flex-row gap-3 items-center">
+            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+              Breed:
+            </h5>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              {breed}
+            </p>
+          </div>
+
+          <div className="flex flex-row gap-3 items-center">
+            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+              Age:
+            </h5>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              {age}
+            </p>
+          </div>
+
+          <div className="flex flex-row gap-3 items-center">
+            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+              Sex:
+            </h5>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              {sex}
+            </p>
+          </div>
+
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
             {description}
           </p>

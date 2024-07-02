@@ -39,6 +39,9 @@ const DogsContainer = () => {
                 image={pet.image}
                 description={pet.description}
                 price={pet.price}
+                breed={pet.breed}
+                age={pet.age}
+                sex={pet.sex}
               />
             </div>
           );
