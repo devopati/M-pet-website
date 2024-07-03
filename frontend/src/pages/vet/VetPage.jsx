@@ -2,6 +2,7 @@ import React from "react";
 import { CustomImages } from "../../assets/images";
 import VetCard from "./VetCard";
 import Book from "./Book";
+import PlanCard from "./PlanCard";
 
 const VetPage = () => {
   return (
@@ -55,6 +56,11 @@ const VetPage = () => {
       </div>
 
       <Book />
+
+      <div className="grid grid-cols-3 place-items-center">
+        <PlanCard title={"Basic Plan"} price={399} />
+        <PlanCard title={"Premium Plan"} price={799} premium />
+      </div>
     </div>
   );
 };
