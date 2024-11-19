@@ -55,12 +55,21 @@ const VetPage = () => {
         <VetCard /> */}
       </div>
 
-      <Book />
+      <div
+        style={{
+          backgroundImage:
+            "url('https://preview.colorlib.com/theme/petvet/images/bg_1.jpg.webp')",
+          // height: "661px",
+          backgroundPosition: "50% 50%",
+        }}
+      >
+        <Book />
+      </div>
 
-      <div className="grid grid-cols-3 place-items-center">
+      {/* <div className="grid grid-cols-3 place-items-center">
         <PlanCard title={"Basic Plan"} price={399} />
         <PlanCard title={"Premium Plan"} price={799} premium />
-      </div>
+      </div> */}
     </div>
   );
 };

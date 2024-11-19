@@ -4,8 +4,7 @@ import { toast } from "react-toastify";
 const Book = () => {
   return (
     <div>
-      {" "}
-      <section class="bg-white dark:bg-gray-900">
+      <section class="">
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-purple-700 dark:text-white">
             Book an Appointment For Vet service
@@ -20,7 +19,7 @@ const Book = () => {
               )
             }
             action="#"
-            class="space-y-8 border rounded border-gray-400 ml-[40px] pl-[30px] pt-[30px] pb-[30px] pr-[30px]"
+            class="space-y-8 border rounded bg-white border-gray-400 ml-[40px] pl-[30px] pt-[30px] pb-[30px] pr-[30px]"
           >
             <div>
               <label
